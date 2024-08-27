@@ -98,6 +98,7 @@ private void initializePermissionItems() {
 }
 ```
 <h3>2. Request Permissions</h3>
+
 ```java
 private void requestAllDeclaredPermissions() {
     String[] declaredPermissions = PermissionHandler.getInstance().getAppDeclaredPermissions(this);
@@ -107,6 +108,7 @@ private void requestAllDeclaredPermissions() {
 }
 ```
 <h3>3. Refresh Permission Status</h3>
+
 ```java
 private void refreshPermissionStatus() {
     for (PermissionItem permissionItem : permissionItemList) {
@@ -119,6 +121,7 @@ private void refreshPermissionStatus() {
     permissionAdapter.notifyDataSetChanged();
 }
 ```
+
 <h2 id="contributing">🤝 Contributing</h2>
 <p>We welcome contributions to enhance the PermissionsManager library! To contribute:</p>
 <ol> <li>Fork the repository.
